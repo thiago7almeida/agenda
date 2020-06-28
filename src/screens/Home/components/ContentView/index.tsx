@@ -1,38 +1,38 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import {List, ListItem, useStyleSheet} from '@ui-kitten/components';
+import {useSelector} from 'react-redux';
 
 import SearchHeader from '../SearchHeader';
 import RigthIcon from '../RigthIcon';
 import LeftIcon from '../LeftIcon';
 import themedStyles from './themedStyles';
 
-const mockData = [
-  {name: 'name', phone: '(16) 9963894106'},
-  {name: 'thiago', phone: '(16) 9963894106'},
-  {name: 'Jose', phone: '(16) 9963894106'},
-  {name: 'Valmir', phone: '(16) 9963894106'},
-  {name: 'Gustavo', phone: '(16) 9963894106'},
-  {name: 'Gabi', phone: '(16) 9963894106'},
-  {name: 'Cristina', phone: '(16) 9963894106'},
-  {name: 'Patricia', phone: '(16) 9963894106'},
-  {name: 'Priscila', phone: '(16) 9963894106'},
-  {name: 'thiago', phone: '(16) 9963894106'},
-  {name: 'Jose', phone: '(16) 9963894106'},
-  {name: 'Valmir', phone: '(16) 9963894106'},
-  {name: 'Gustavo', phone: '(16) 9963894106'},
-  {name: 'Gabi', phone: '(16) 9963894106'},
-  {name: 'Cristina', phone: '(16) 9963894106'},
-  {name: 'Patricia', phone: '(16) 9963894106'},
-  {name: 'Priscila', phone: '(16) 9963894106'},
-  {name: 'Deh', phone: '(16) 9963894106'},
-];
+import {ApplicationState} from '../../../../store/';
+import {Contact} from '../../../../store/ducks/contacts';
+
+//remove accents and capital letters
+const normalizeText = (text: string): string =>
+  text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
 
 const ContentView: React.FC = (): React.ReactElement => {
   const styles = useStyleSheet(themedStyles);
 
+  const {data} = useSelector((state: ApplicationState) => state.contacts);
+  const {name} = useSelector((state: ApplicationState) => state.search);
+
+  const filteredData: Contact[] = useMemo(() => {
+    if (name.length === 0) return data;
+    return data.filter((item) =>
+      normalizeText(item.name).includes(normalizeText(name)),
+    );
+  }, [data, name]);
+
   return (
     <List
-      data={mockData}
+      data={filteredData}
       contentContainerStyle={styles.contentContainerStyle}
       renderItem={(props) => (
         <ListItem

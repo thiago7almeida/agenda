@@ -1,11 +1,13 @@
-import {combineReducers} from 'redux';
-import login from './login';
+import {combineReducers, Action} from 'redux';
+import contacts from './contacts';
+import search from './search';
 
 const reducers = combineReducers({
-  login,
+  contacts,
+  search,
 });
 
-const rootReducer = (state: any, action: any) => {
+const rootReducer = (state: any, action: Action) => {
   return reducers(state, action);
 };
 export default rootReducer;
