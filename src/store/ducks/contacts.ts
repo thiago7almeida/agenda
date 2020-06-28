@@ -14,6 +14,7 @@ interface Address {
 export interface Contact {
   name: string;
   phone: string;
+  email: string;
   address: Address;
 }
 export interface ContactsState {
@@ -25,6 +26,7 @@ const initialState: ContactsState = {
     {
       name: 'name',
       phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
       address: {
         cep: '05010000',
         state: 'SP',
@@ -34,6 +36,103 @@ const initialState: ContactsState = {
       },
     },
     {
+      name: 'thiago',
+      phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      name: 'Jose',
+      phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      name: 'Valmir',
+      phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      name: 'Gustavo',
+      phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      name: 'Gabi',
+      phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      name: 'Cristina',
+      phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      name: 'Patricia',
+      email: 'thiagoa.silva@outlook.com',
+      phone: '(16) 9963894106',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      email: 'thiagoa.silva@outlook.com',
+      name: 'Priscila',
+      phone: '(16) 9963894106',
+      address: {
+        cep: '05010000',
+        state: 'SP',
+        city: 'São Paulo',
+        street: 'Rua Caiubí',
+        neighborhood: 'Perdizes',
+      },
+    },
+    {
+      email: 'thiagoa.silva@outlook.com',
       name: 'thiago',
       phone: '(16) 9963894106',
       address: {
@@ -46,6 +145,7 @@ const initialState: ContactsState = {
     },
     {
       name: 'Jose',
+      email: 'thiagoa.silva@outlook.com',
       phone: '(16) 9963894106',
       address: {
         cep: '05010000',
@@ -56,6 +156,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      email: 'thiagoa.silva@outlook.com',
       name: 'Valmir',
       phone: '(16) 9963894106',
       address: {
@@ -68,6 +169,7 @@ const initialState: ContactsState = {
     },
     {
       name: 'Gustavo',
+      email: 'thiagoa.silva@outlook.com',
       phone: '(16) 9963894106',
       address: {
         cep: '05010000',
@@ -78,6 +180,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      email: 'thiagoa.silva@outlook.com',
       name: 'Gabi',
       phone: '(16) 9963894106',
       address: {
@@ -89,6 +192,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      email: 'thiagoa.silva@outlook.com',
       name: 'Cristina',
       phone: '(16) 9963894106',
       address: {
@@ -100,6 +204,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      email: 'thiagoa.silva@outlook.com',
       name: 'Patricia',
       phone: '(16) 9963894106',
       address: {
@@ -113,94 +218,7 @@ const initialState: ContactsState = {
     {
       name: 'Priscila',
       phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'thiago',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Jose',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Valmir',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Gustavo',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Gabi',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Cristina',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Patricia',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Priscila',
-      phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
       address: {
         cep: '05010000',
         state: 'SP',
@@ -212,6 +230,7 @@ const initialState: ContactsState = {
     {
       name: 'Deh',
       phone: '(16) 9963894106',
+      email: 'thiagoa.silva@outlook.com',
       address: {
         cep: '05010000',
         state: 'SP',
