@@ -7,17 +7,21 @@ import * as eva from '@eva-design/eva';
 import Router from './routes';
 import {persistor, store} from './store';
 import {EvaIconsPack} from '@ui-kitten/eva-icons';
+import {StatusBar} from 'react-native';
 
 const App: React.FC<{}> = ({}) => {
   return (
-    <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <ApplicationProvider {...eva} theme={eva.light}>
-          <IconRegistry icons={EvaIconsPack} />
-          <Router />
-        </ApplicationProvider>
-      </PersistGate>
-    </Provider>
+    <>
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <ApplicationProvider {...eva} theme={eva.light}>
+            <IconRegistry icons={EvaIconsPack} />
+            <Router />
+          </ApplicationProvider>
+        </PersistGate>
+      </Provider>
+      <StatusBar barStyle={'dark-content'} backgroundColor={'white'} />
+    </>
   );
 };
 
