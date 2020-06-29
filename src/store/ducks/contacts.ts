@@ -12,6 +12,7 @@ interface Address {
 }
 
 export interface Contact {
+  id: string;
   name: string;
   phone: string;
   email: string;
@@ -24,6 +25,7 @@ export interface ContactsState {
 const initialState: ContactsState = {
   data: [
     {
+      id: '1',
       name: 'name',
       phone: '(16) 9963894106',
       email: 'thiagoa.silva@outlook.com',
@@ -36,6 +38,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '2',
       name: 'thiago',
       phone: '(16) 9963894106',
       email: 'thiagoa.silva@outlook.com',
@@ -48,6 +51,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '3',
       name: 'Jose',
       phone: '(16) 9963894106',
       email: 'thiagoa.silva@outlook.com',
@@ -60,6 +64,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '4',
       name: 'Valmir',
       phone: '(16) 9963894106',
       email: 'thiagoa.silva@outlook.com',
@@ -72,6 +77,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '5',
       name: 'Gustavo',
       phone: '(16) 9963894106',
       email: 'thiagoa.silva@outlook.com',
@@ -84,6 +90,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '6',
       name: 'Gabi',
       phone: '(16) 9963894106',
       email: 'thiagoa.silva@outlook.com',
@@ -96,6 +103,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '7',
       name: 'Cristina',
       phone: '(16) 9963894106',
       email: 'thiagoa.silva@outlook.com',
@@ -108,6 +116,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '8',
       name: 'Patricia',
       email: 'thiagoa.silva@outlook.com',
       phone: '(16) 9963894106',
@@ -120,6 +129,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '9',
       email: 'thiagoa.silva@outlook.com',
       name: 'Priscila',
       phone: '(16) 9963894106',
@@ -132,6 +142,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '10',
       email: 'thiagoa.silva@outlook.com',
       name: 'thiago',
       phone: '(16) 9963894106',
@@ -144,6 +155,7 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '11',
       name: 'Jose',
       email: 'thiagoa.silva@outlook.com',
       phone: '(16) 9963894106',
@@ -156,81 +168,10 @@ const initialState: ContactsState = {
       },
     },
     {
+      id: '12',
       email: 'thiagoa.silva@outlook.com',
       name: 'Valmir',
       phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Gustavo',
-      email: 'thiagoa.silva@outlook.com',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      email: 'thiagoa.silva@outlook.com',
-      name: 'Gabi',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      email: 'thiagoa.silva@outlook.com',
-      name: 'Cristina',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      email: 'thiagoa.silva@outlook.com',
-      name: 'Patricia',
-      phone: '(16) 9963894106',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Priscila',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-      },
-    },
-    {
-      name: 'Deh',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
       address: {
         cep: '05010000',
         state: 'SP',
