@@ -32,7 +32,6 @@ const ButtonLeft = () => {
 
 const App = ({route}: Props) => {
   const {isNew, item} = route.params;
-  console.log({item});
   return (
     <SafeAreaView style={styles.container}>
       <TopNavigation

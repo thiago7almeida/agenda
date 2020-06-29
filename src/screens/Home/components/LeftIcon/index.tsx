@@ -8,7 +8,7 @@ const LeftIcon = (name: string) => {
   const styles = useStyleSheet(themedStyles);
   return (
     <View style={styles.iconCircle}>
-      <Text>{name[0]}</Text>
+      <Text>{name[0].toUpperCase()}</Text>
     </View>
   );
 };
