@@ -1,14 +1,22 @@
-import React, {useState, useEffect} from 'react';
-import {View, Alert} from 'react-native';
+import React, {useState, useCallback} from 'react';
+import {View} from 'react-native';
 import {Layout, Icon, Input, Button, Spinner} from '@ui-kitten/components';
 import {useForm, Controller} from 'react-hook-form';
 import {ScrollView} from 'react-native-gesture-handler';
 import {MaskService} from 'react-native-masked-text';
+import {useDispatch} from 'react-redux';
 import * as yup from 'yup';
 import CepData from 'cep-promise';
+import UUIDGenerator from 'react-native-uuid-generator';
 
 import styles from './styles';
-import {Contact} from 'src/store/ducks/contacts';
+import {
+  Contact,
+  deleteContact,
+  editContact,
+  createContact,
+} from '../../../../store/ducks/contacts';
+import {useNavigation} from '@react-navigation/native';
 
 const SignupSchema = yup.object().shape({
   name: yup.string().required('Nome é obrigatório'),
@@ -40,7 +48,58 @@ const Form: React.FC<{isNew?: boolean; item?: Contact}> = ({isNew, item}) => {
     }
   };
 
-  // const onSubmit = (data) => Alert.alert('Form Data', JSON.stringify(data));
+  const navigation = useNavigation();
+  const dispatch = useDispatch();
+
+  const deleteContactState = useCallback((id) => dispatch(deleteContact(id)), [
+    dispatch,
+  ]);
+  const editContactState = useCallback(
+    (contact) => dispatch(editContact(contact)),
+    [dispatch],
+  );
+  const createContactState = useCallback(
+    (contact) => dispatch(createContact(contact)),
+    [dispatch],
+  );
+  const onSubmit = async (data: any) => {
+    if (!isNew && item) {
+      const formatedData: Contact = {
+        id: item?.id,
+        address: {
+          cep: data.cep,
+          city: data.city,
+          complement: data.complement,
+          neighborhood: data.neighborhood,
+          number: data.number,
+          state: data.state,
+          street: data.street,
+        },
+        email: data.email,
+        name: data.name,
+        phone: data.phone,
+      };
+      editContactState(formatedData);
+    } else {
+      const formatedData: Contact = {
+        id: await UUIDGenerator.getRandomUUID(),
+        address: {
+          cep: data.cep,
+          city: data.city,
+          complement: data.complement,
+          neighborhood: data.neighborhood,
+          number: data.number,
+          state: data.state,
+          street: data.street,
+        },
+        email: data.email,
+        name: data.name,
+        phone: data.phone,
+      };
+      createContactState(formatedData);
+    }
+    navigation.goBack();
+  };
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <Layout level="1" style={styles.container}>
@@ -208,11 +267,17 @@ const Form: React.FC<{isNew?: boolean; item?: Contact}> = ({isNew, item}) => {
             <Button
               style={{marginBottom: 10}}
               appearance="outline"
-              onPress={() => setIsEdit(false)}>
+              onPress={handleSubmit(onSubmit)}>
               Salvar
             </Button>
             {!isNew && (
-              <Button appearance="ghost" status="danger">
+              <Button
+                onPress={() => {
+                  deleteContactState(item?.id);
+                  navigation.goBack();
+                }}
+                appearance="ghost"
+                status="danger">
                 Deletar
               </Button>
             )}
@@ -224,9 +289,6 @@ const Form: React.FC<{isNew?: boolean; item?: Contact}> = ({isNew, item}) => {
           </Button>
         )}
       </Layout>
-      {/* <Button onPress={handleSubmit(onSubmit)} appearance="outline">
-        teste
-      </Button> */}
     </ScrollView>
   );
 };

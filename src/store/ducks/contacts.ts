@@ -1,7 +1,9 @@
 import {Reducer} from 'redux';
 
 export const Types = {
-  // LOGIN: 'login/LOGIN',
+  DELETE: 'contact/DELETE',
+  EDIT: 'contact/EDIT',
+  CREATE: 'contact/CREATE',
 };
 interface Address {
   cep: string;
@@ -25,122 +27,49 @@ export interface ContactsState {
 }
 
 const initialState: ContactsState = {
-  data: [
-    {
-      id: '1',
-      name: 'name',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-        complement: '',
-        number: '',
-      },
-    },
-    {
-      id: '2',
-      name: 'thiago',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-        complement: '',
-        number: '',
-      },
-    },
-    {
-      id: '3',
-      name: 'Jose',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-        complement: '',
-        number: '',
-      },
-    },
-    {
-      id: '4',
-      name: 'Valmir',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-        complement: '',
-        number: '',
-      },
-    },
-    {
-      id: '5',
-      name: 'Gustavo',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-        complement: '',
-        number: '',
-      },
-    },
-    {
-      id: '6',
-      name: 'Gabi',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-        complement: '',
-        number: '',
-      },
-    },
-    {
-      id: '7',
-      name: 'Cristina',
-      phone: '(16) 9963894106',
-      email: 'thiagoa.silva@outlook.com',
-      address: {
-        cep: '05010000',
-        state: 'SP',
-        city: 'São Paulo',
-        street: 'Rua Caiubí',
-        neighborhood: 'Perdizes',
-        complement: '',
-        number: '',
-      },
-    },
-  ],
+  data: [],
 };
 
 const reducer: Reducer<ContactsState> = (state = initialState, action) => {
   switch (action.type) {
-    // case Types.LOGIN:
-    //   return {...state, isLoged: true};
+    case Types.CREATE:
+      return {
+        ...state,
+        data: [action.payload, ...state.data],
+      };
+    case Types.DELETE:
+      return {
+        ...state,
+        data: state.data.filter((item) => item.id !== action.payload),
+      };
+    case Types.EDIT:
+      console.log(action.payload);
+      return {
+        ...state,
+        data: [
+          action.payload,
+          ...state.data.filter((item) => item.id !== action.payload.id),
+        ],
+      };
 
     default:
       return state;
   }
 };
+
+export const deleteContact = (id: string) => ({
+  type: Types.DELETE,
+  payload: id,
+});
+
+export const editContact = (contact: Contact) => ({
+  type: Types.EDIT,
+  payload: contact,
+});
+
+export const createContact = (contact: Contact) => ({
+  type: Types.CREATE,
+  payload: contact,
+});
+
 export default reducer;

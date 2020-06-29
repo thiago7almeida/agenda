@@ -13,7 +13,7 @@ const persistConfig = {
   key: '1m2_agenda',
   stateReconciler: autoMergeLevel2,
   storage: AsyncStorage,
-  whitelist: [],
+  whitelist: ['contacts'],
 };
 
 import rootReducer from './ducks';
