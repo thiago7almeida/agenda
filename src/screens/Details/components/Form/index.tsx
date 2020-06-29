@@ -65,7 +65,7 @@ const Form: React.FC<{isNew?: boolean; item?: Contact}> = ({isNew, item}) => {
   const onSubmit = async (data: any) => {
     if (!isNew && item) {
       const formatedData: Contact = {
-        id: item?.id,
+        id: item.id,
         address: {
           cep: data.cep,
           city: data.city,

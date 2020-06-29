@@ -1,0 +1,1253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Rendering should match to snapshot - Primary: Primary Form  snapshot 1`] = `
+<ComponentWrapper
+  showsVerticalScrollIndicator={false}
+>
+  <Layout
+    level="1"
+    style={
+      Object {
+        "marginHorizontal": 18,
+        "marginVertical": 18,
+      }
+    }
+  >
+    <Layout
+      level="1"
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginVertical": 3,
+        }
+      }
+    >
+      <Icon
+        animation="zoom"
+        fill="#8F9BB3"
+        name="person-outline"
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="name"
+        onChange={[Function]}
+        placeholder="Nome"
+        status="basic"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 3,
+          },
+          Object {
+            "marginTop": 20,
+          },
+        ]
+      }
+    >
+      <Icon
+        animation="zoom"
+        fill="#8F9BB3"
+        name="phone-outline"
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        keyboardType="numeric"
+        name="phone"
+        onChange={[Function]}
+        placeholder="Celular"
+        status="basic"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 3,
+          },
+          Object {
+            "marginTop": 20,
+          },
+        ]
+      }
+    >
+      <Icon
+        animation="zoom"
+        fill="#8F9BB3"
+        name="email-outline"
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="email"
+        onChange={[Function]}
+        placeholder="Email"
+        status="basic"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 3,
+          },
+          Object {
+            "marginTop": 20,
+          },
+        ]
+      }
+    >
+      <Icon
+        animation="zoom"
+        fill="#8F9BB3"
+        name="pin-outline"
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        accessoryRight={[Function]}
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        keyboardType="numeric"
+        name="cep"
+        onChange={[Function]}
+        placeholder="Cep"
+        status="basic"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginVertical": 3,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="state"
+        onChange={[Function]}
+        placeholder="Estado"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginVertical": 3,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="city"
+        onChange={[Function]}
+        placeholder="Cidade"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginVertical": 3,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="street"
+        onChange={[Function]}
+        placeholder="Rua"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginVertical": 3,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="neighborhood"
+        onChange={[Function]}
+        placeholder="Endereço"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginVertical": 3,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="number"
+        onChange={[Function]}
+        placeholder="Número"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Layout
+      level="1"
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 3,
+          },
+          Object {
+            "marginBottom": 20,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 25,
+            "marginRight": 15,
+            "marginTop": 4,
+            "width": 25,
+          }
+        }
+      />
+      <Controller
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Input",
+            "render": [Function],
+          }
+        }
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "dirtyFieldsRef": Object {
+              "current": Set {},
+            },
+            "errorsRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValues": Object {
+              "current": Object {},
+            },
+            "fieldArrayNamesRef": Object {
+              "current": Set {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "fieldsWithValidationRef": Object {
+              "current": Set {},
+            },
+            "formState": Object {
+              "dirty": false,
+              "dirtyFields": Set {},
+              "isSubmitted": false,
+              "isSubmitting": false,
+              "isValid": true,
+              "submitCount": 0,
+              "touched": Object {},
+            },
+            "getValues": [Function],
+            "isDirtyRef": Object {
+              "current": false,
+            },
+            "isWatchAllRef": Object {
+              "current": false,
+            },
+            "mode": Object {
+              "isOnBlur": true,
+              "isOnChange": false,
+              "isOnSubmit": false,
+            },
+            "reRender": [Function],
+            "reValidateMode": Object {
+              "isReValidateOnBlur": false,
+              "isReValidateOnSubmit": false,
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "constructor": true,
+                "dirty": true,
+                "dirtyFields": true,
+                "isSubmitted": true,
+                "isSubmitting": true,
+                "isValid": true,
+                "submitCount": true,
+                "touched": true,
+              },
+            },
+            "register": [Function],
+            "removeFieldEventListener": [Function],
+            "resetFieldArrayFunctionRef": Object {
+              "current": Object {},
+            },
+            "setValue": [Function],
+            "touchedFieldsRef": Object {
+              "current": Object {},
+            },
+            "triggerValidation": [Function],
+            "unregister": [Function],
+            "validFieldsRef": Object {
+              "current": Set {},
+            },
+            "validateSchemaIsValid": [Function],
+            "watchFieldsRef": Object {
+              "current": Set {},
+            },
+          }
+        }
+        disabled={true}
+        name="complement"
+        onChange={[Function]}
+        placeholder="Complemento"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </Layout>
+    <Button
+      appearance="outline"
+      onPress={[Function]}
+    >
+      Editar
+    </Button>
+  </Layout>
+</ComponentWrapper>
+`;

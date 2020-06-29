@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchHeader Rendering should match to snapshot - Primary: Primary SearchHeader  snapshot 1`] = `
+<Layout
+  level="1"
+  style={
+    Object {
+      "paddingBottom": 8,
+      "paddingHorizontal": 16,
+      "paddingTop": 16,
+    }
+  }
+>
+  <Input
+    accessoryRight={[Function]}
+    onChangeText={[Function]}
+    placeholder="Buscar"
+    value=""
+  />
+</Layout>
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentView Rendering should match to snapshot - Fourth: Fourth ContentView snapshot 1`] = `
+<List
+  ListHeaderComponent={[Function]}
+  contentContainerStyle={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+  data={Array []}
+  renderItem={[Function]}
+  style={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+/>
+`;
+
+exports[`ContentView Rendering should match to snapshot - Primary: Primary ContentView  snapshot 1`] = `
+<List
+  ListHeaderComponent={[Function]}
+  contentContainerStyle={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+  data={Array []}
+  renderItem={[Function]}
+  style={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+/>
+`;
+
+exports[`ContentView Rendering should match to snapshot - Second: Second ContentView snapshot 1`] = `
+<List
+  ListHeaderComponent={[Function]}
+  contentContainerStyle={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+  data={
+    Array [
+      Object {
+        "name": "nome",
+      },
+    ]
+  }
+  renderItem={[Function]}
+  style={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+/>
+`;
+
+exports[`ContentView Rendering should match to snapshot - Third: Third ContentView snapshot 1`] = `
+<List
+  ListHeaderComponent={[Function]}
+  contentContainerStyle={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+  data={
+    Array [
+      Object {
+        "name": "nome",
+      },
+    ]
+  }
+  renderItem={[Function]}
+  style={
+    Object {
+      "backgroundColor": "background-basic-color-1",
+    }
+  }
+/>
+`;

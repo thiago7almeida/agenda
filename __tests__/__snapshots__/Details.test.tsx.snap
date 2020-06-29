@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details rendering should match to snapshot - Primary: Primary Details snapshot 1`] = `
+<RNCSafeAreaView
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+>
+  <TopNavigation
+    accessoryLeft={[Function]}
+    alignment="center"
+    title="Detalhe do Contato"
+  />
+  <Divider />
+  <Form
+    isNew={true}
+  />
+</RNCSafeAreaView>
+`;
+
+exports[`Details rendering should match to snapshot - Secondary: Secondary Details snapshot 1`] = `
+<RNCSafeAreaView
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+>
+  <TopNavigation
+    accessoryLeft={[Function]}
+    alignment="center"
+    title="Detalhe do Contato"
+  />
+  <Divider />
+  <Form
+    isNew={false}
+    item={
+      Object {
+        "address": Object {
+          "cep": "",
+          "city": "14955-000",
+          "complement": "",
+          "neighborhood": "",
+          "number": "",
+          "state": "",
+          "street": "",
+        },
+        "email": "",
+        "id": "1234",
+        "name": "nome",
+        "phone": "",
+      }
+    }
+  />
+</RNCSafeAreaView>
+`;

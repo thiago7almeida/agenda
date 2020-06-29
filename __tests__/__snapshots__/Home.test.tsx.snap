@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Rendering should match to snapshot - Primary: Primary Home snapshot 1`] = `
+<RNCSafeAreaView
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+>
+  <TopNavigation
+    accessoryRight={[Function]}
+    alignment="center"
+    title="Contatos"
+  />
+  <Divider />
+  <ContentView />
+</RNCSafeAreaView>
+`;
