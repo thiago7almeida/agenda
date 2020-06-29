@@ -36,14 +36,17 @@ const ContentView: React.FC = (): React.ReactElement => {
     <List
       data={filteredData}
       contentContainerStyle={styles.contentContainerStyle}
+      style={styles.containerStyle}
       renderItem={(props) => (
         <ListItem
           {...props}
           onPress={() =>
             navigation.navigate('Details', {
               isNew: false,
+              item: props.item,
             })
           }
+          key={props.item.id}
           style={styles.listItem}
           title={props.item.name}
           description={props.item.phone}
