@@ -1,13 +1,15 @@
 import React from 'react';
 import {TopNavigation, Divider, Button, Icon} from '@ui-kitten/components';
-import styles from './styles';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useNavigation} from '@react-navigation/native';
-import Form from './components/Form';
 import {StackScreenProps} from '@react-navigation/stack';
 
+import styles from './styles';
+import Form from './components/Form';
+import {Contact} from '../../store/ducks/contacts';
+
 type RootStackParamList = {
-  Details: {isNew: boolean};
+  Details: {isNew: boolean; item?: Contact};
 };
 
 type Props = StackScreenProps<RootStackParamList, 'Details'>;
@@ -29,7 +31,8 @@ const ButtonLeft = () => {
 };
 
 const App = ({route}: Props) => {
-  const {isNew} = route.params;
+  const {isNew, item} = route.params;
+  console.log({item});
   return (
     <SafeAreaView style={styles.container}>
       <TopNavigation
@@ -38,7 +41,7 @@ const App = ({route}: Props) => {
         accessoryLeft={ButtonLeft}
       />
       <Divider />
-      <Form isNew={isNew} />
+      <Form isNew={isNew} item={item} />
     </SafeAreaView>
   );
 };
