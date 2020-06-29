@@ -1,41 +1,44 @@
 import React from 'react';
 import {TopNavigation, Divider, Button, Icon} from '@ui-kitten/components';
 import styles from './styles';
-import ContentView from './components/ContentView';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useNavigation} from '@react-navigation/native';
+import Form from './components/Form';
+import {StackScreenProps} from '@react-navigation/stack';
 
+type RootStackParamList = {
+  Details: {isNew: boolean};
+};
+
+type Props = StackScreenProps<RootStackParamList, 'Details'>;
 const IconPlus = () => {
   return (
-    <Icon name="person-add-outline" fill="black" style={styles.iconPlus} />
+    <Icon name="arrow-ios-back-outline" fill="black" style={styles.iconPlus} />
   );
 };
 
-const ButtonRigth = () => {
+const ButtonLeft = () => {
   const navigation = useNavigation();
   return (
     <Button
       appearance="ghost"
-      onPress={() =>
-        navigation.navigate('Details', {
-          isNew: true,
-        })
-      }
+      onPress={() => navigation.goBack()}
       accessoryLeft={IconPlus}
     />
   );
 };
 
-const App: React.FC = () => {
+const App = ({route}: Props) => {
+  const {isNew} = route.params;
   return (
     <SafeAreaView style={styles.container}>
       <TopNavigation
-        title="Contatos"
+        title="Detalhe do Contato"
         alignment={'center'}
-        accessoryRight={ButtonRigth}
+        accessoryLeft={ButtonLeft}
       />
       <Divider />
-      <ContentView />
+      <Form isNew={isNew} />
     </SafeAreaView>
   );
 };

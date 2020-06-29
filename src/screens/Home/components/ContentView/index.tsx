@@ -9,6 +9,7 @@ import themedStyles from './themedStyles';
 
 import {ApplicationState} from '../../../../store/';
 import {Contact} from '../../../../store/ducks/contacts';
+import {useNavigation} from '@react-navigation/native';
 
 //remove accents and capital letters
 const normalizeText = (text: string): string =>
@@ -18,6 +19,7 @@ const normalizeText = (text: string): string =>
     .replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
 
 const ContentView: React.FC = (): React.ReactElement => {
+  const navigation = useNavigation();
   const styles = useStyleSheet(themedStyles);
 
   const {data} = useSelector((state: ApplicationState) => state.contacts);
@@ -37,6 +39,11 @@ const ContentView: React.FC = (): React.ReactElement => {
       renderItem={(props) => (
         <ListItem
           {...props}
+          onPress={() =>
+            navigation.navigate('Details', {
+              isNew: false,
+            })
+          }
           style={styles.listItem}
           title={props.item.name}
           description={props.item.phone}
